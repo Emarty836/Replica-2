@@ -1,18 +1,18 @@
 html{
     padding:0;
     margin:0;
-    background:red;
 }
 
 body{
     text-align:center;
     margin:0;
     padding:0;
-    background:red;
+    background-color: black;
 }
 
 h1{
     margin:0;
+    color:white;
 }
 
 /* ------------------------------------   Logo ----------------------------------------------------------- */
@@ -28,9 +28,8 @@ svg{
     opacity:1;
     cursor:pointer;
     transition:1s;
-    fill: rgba(34,34,34,1);
-    filter:invert(150%);
-    mix-blend-mode: difference;
+    fill: white;
+    /* mix-blend-mode: difference; */
 }
 
 .site-title{
@@ -106,7 +105,9 @@ nav > a:nth-child(1){
     right:0;
 }
 
-
+#greyAside{
+    background:rgb(44, 44, 44);
+}
 
 /* ----------------------------------   Social Media Divs ------------------------------------------------*/
 
@@ -116,39 +117,4 @@ nav > a:nth-child(1){
     justify-content: space-between;
     flex-direction:row;
     left:90%;
-}
-
-/*--------------------------------------------- Main ---------------------------------------------------------------*/
-
-section{
-    width:100%;
-}
-
-#one{
-    background:green;
-    height:100vh;
-    margin:0;
-    padding:0;
-    /* border:1px blue solid; */
-}
-
-video{
-    height:100vh;
-    width:100%;
-    /* max-width: 100%; */
-    object-fit:cover;
-    object-position: 50% 50%;
-    display:inline-block;
-    margin: auto;
-    padding: 0;
-    vertical-align: top;
-    /* border:solid red 1px; */
-}
-
-
-#two{
-    
-    height:100vh;
-    
-    background:blue;
 }
