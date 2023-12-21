@@ -1,0 +1,32 @@
+body{
+    text-align:center;
+    margin:0;
+}
+
+#one{
+    background:green;
+    height:100vh;
+    width:100%;
+    margin:0;
+    padding:0;
+    /* border:1px blue solid; */
+    /* display:inline-block; */
+   
+}
+
+.social{
+    position:absolute;
+}
+
+video{
+    height:100vh;
+    width:100%;
+    /* max-width: 100%; */
+    object-fit:cover;
+    object-position: 50% 50%;
+    display:inline-block;
+    margin: auto;
+    padding: 0;
+    /* border:solid red 1px; */
+}
+
