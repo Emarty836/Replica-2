@@ -1,6 +1,52 @@
+html{
+    padding:0;
+    margin:0;
+    background:red;
+}
+
 body{
     text-align:center;
     margin:0;
+    padding:0;
+    background:red;
+}
+
+/* ------------------------------------   Logo ----------------------------------------------------------- */
+.branding{
+    width:200px;
+    height:1250px;
+    position:absolute;
+    left:60px;
+    top:30px;
+}
+
+svg{
+    opacity:1;
+    cursor:pointer;
+    transition:1s;
+    fill: rgba(34,34,34,1);
+    filter:invert(150%);
+    mix-blend-mode: difference;
+}
+
+
+
+.site-title{
+    opacity:0;
+    transition:.5s ease-in-out;
+}
+
+svg:hover > .site-title {
+    display:block;
+    opacity:1;
+}
+
+/* ---------------------------------------  Side Nav Tabs --------------------------------------------------*/
+
+/* ----------------------------------   Social Media Divs ------------------------------------------------*/
+
+.social{
+    position:absolute;
 }
 
 #one{
@@ -10,12 +56,6 @@ body{
     margin:0;
     padding:0;
     /* border:1px blue solid; */
-    /* display:inline-block; */
-   
-}
-
-.social{
-    position:absolute;
 }
 
 video{
@@ -27,6 +67,7 @@ video{
     display:inline-block;
     margin: auto;
     padding: 0;
+    vertical-align: top;
     /* border:solid red 1px; */
 }
 
