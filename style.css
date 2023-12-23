@@ -145,10 +145,40 @@ video{
     /* border:solid red 1px; */
 }
 
+.mainHeadline{
+    position:absolute;
+    font-size:110px;
+    top:235px;
+    left:13%;
+    z-index:2;
+    color:#ea1e48;
+    /* border:red solid 1px; */
+    margin: 0 auto;
+    width:75%;
+    text-transform: uppercase;
+    text-align:left;
+    line-height:5rem;
+}
+.subHeading{
+    color:white;
+    font-size:80px;
+}
+
+/*-------------------------------------------------------- Section 2 -------------------------------------------------------*/
 
 #two{
     
     height:100vh;
     
     background:blue;
+}
+
+@media screen and (max-width: 959px) {
+    .mainHeadline{
+        font-size:70px;
+        /* border:blue solid 1px; */
+    }
+    .subHeading{
+        font-size:60px;
+    }
 }
