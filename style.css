@@ -1,7 +1,7 @@
 html{
     padding:0;
     margin:0;
-    background:red;
+    
 }
 
 body{
@@ -19,7 +19,7 @@ h1{
 .branding{
     width:200px;
     height:1250px;
-    position:absolute;
+    position:fixed;
     left:60px;
     top:30px;
 }
@@ -31,6 +31,7 @@ svg{
     fill: rgba(34,34,34,1);
     filter:invert(150%);
     mix-blend-mode: difference;
+    
 }
 
 .site-title{
@@ -192,11 +193,17 @@ video{
 /*-------------------------------------------------------- Section 2 -------------------------------------------------------*/
 
 #two{
-    
     height:100vh;
-    
-    background:blue;
+    background-image:url('images/Refugee-Scholar.png');
+    width:100%;
+    object-fit: cover;
+    background-position:50% 0;
+    object-position: -1100px 0%;
+    background-size:130% 100%;
+    background-repeat: no-repeat;
 }
+
+/* ---------------- Still need to figure out mobile sizing for section two ------------------- */
 
 @media screen and (max-width: 959px) {
     .mainHeadline{
@@ -207,3 +214,10 @@ video{
         font-size:60px;
     }
 }
+
+/* @media screen and (max-width: 450px) {
+    #two{
+        background-size:1460px 800px;
+    }
+} */
+
