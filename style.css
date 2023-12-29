@@ -17,11 +17,12 @@ h1{
 
 /* ------------------------------------   Logo ----------------------------------------------------------- */
 .branding{
-    width:200px;
-    height:1250px;
-    position:fixed;
-    left:60px;
-    top:30px;
+    /* width:200px;
+    height:55px; */
+    /* position:absolute; */
+    /* left:60px;
+    top:30px; */
+    /* border:1px solid red; */
 }
 
 svg{
@@ -30,8 +31,12 @@ svg{
     transition:1s;
     fill: rgba(34,34,34,1);
     filter:invert(150%);
-    mix-blend-mode: difference;
-    
+    mix-blend-mode:difference;
+    position:fixed;
+    /* border:solid 1px blue; */
+    width:200px;
+    left:60px;
+    top:30px;
 }
 
 .site-title{
@@ -204,17 +209,61 @@ video{
 }
 
 /* ---------------- Still need to figure out mobile sizing for section two ------------------- */
+@media screen and (max-width:1199px){
+    .mainHeadline{
+        font-size:85px;
+        /* border:green dashed 2px; */
+        top:300px;
+    }
+}
 
 @media screen and (max-width: 959px) {
     .mainHeadline{
         font-size:70px;
         /* border:blue solid 1px; */
+        top:270px;
     }
     .subHeading{
         font-size:60px;
     }
+    nav{
+        display:none;
+    }
 }
 
+@media screen and (max-width: 767px){
+    .mainHeadline{
+        font-size:50px;
+        left:12%;
+        line-height:50px;
+        width:72%;
+    }
+    .subHeading{
+        font-size:50px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    .mainHeadline{
+        font-size:35px;
+        left:12%;
+        line-height:35px;
+        width:71%;
+        top:330px;
+    }
+    .subHeading{
+        font-size:50px;
+        font-size:35px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .mainHeadline{
+        left:10%;
+        /* need to figure out how to make the text group be in center as page widt hshinks past it. */
+    }
+    
+}
 /* @media screen and (max-width: 450px) {
     #two{
         background-size:1460px 800px;
