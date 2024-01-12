@@ -25,11 +25,11 @@ h1{
     border:1px solid red;
 } */
 
-svg{
+.branding > svg{
     opacity:1;
     cursor:pointer;
     transition:1s;
-    fill: rgba(34,34,34,1);
+    /* fill: rgba(34,34,34,1); */
     filter:invert(150%);
     mix-blend-mode:difference;
     position:fixed;
@@ -41,7 +41,7 @@ svg{
 
 .site-title{
     opacity:0;
-    transition:.5s ease-in-out;
+    transition:.3s ease-in-out;
 }
 
 svg:hover > .site-title {
@@ -112,12 +112,17 @@ nav > a:nth-child(1){
     right:0;
 }
 
+svg{
+    fill:red;
+    filter:invert(150%);
+    mix-blend-mode:difference;
+}
 
 
 /* ----------------------------------   Social Media Divs ------------------------------------------------*/
 
 .social{
-    position:absolute;
+    position:fixed;
     display:flex;
     justify-content: space-between;
     flex-direction:row;
@@ -125,33 +130,50 @@ nav > a:nth-child(1){
     /* border:solid 1px green; */
     width:130px;
     padding:0;
-    top:25px;
+    top:40px;
+    position:fixed;
+    background:none;
 }
 
-.social > li{
-    /* border: 1px blue dashed; */
+.social > div{
+    border: 1px blue dashed;
     list-style-type:none;
     width:20px;
     height:20px;
+    cursor:pointer;
+    background:transparent;
+    /* background: rgba(34,34,34,1);
+    filter:invert(150%);
+    mix-blend-mode:difference; */
 }
 
-.social > li:nth-child(1){
-    background:pink;
+.social-svg{
+    opacity:1;
+    /* fill: rgba(34,34,34,1); ------------- temp fill with svg*/
+    filter:invert(150%);
+    mix-blend-mode:difference;
+    border:green solid 1px;
 }
 
-.social > li:nth-child(2){
-    background:rgb(189, 189, 255);
-}
-.social > li:nth-child(3){
-    background:blue;
+.social > div:nth-child(1){
+    /* background:pink; */
+    /* position:relative; */
+    /* border:solid 1px blue; */
 }
 
-.social > li:nth-child(4){
+.social > div:nth-child(2){
+    /* background:rgb(189, 189, 255); */
+}
+.social > div:nth-child(3){
+    /* background:blue; */
+}
+
+.social > div:nth-child(4){
     margin-left:13px;
-    background:white;
+    /* background:white; */
 }
 
-.social > li:nth-child(5){
+.social > div:nth-child(5){
     background:red;
     display:none;
 }
@@ -284,7 +306,7 @@ video{
         display:none;
     }
 
-    .social > li:nth-child(5){
+    .social > div:nth-child(5){
         background:red;
         display:block;
     }
