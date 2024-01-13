@@ -176,7 +176,7 @@ nav > a:nth-child(1){
 }
 
 .social > div:nth-child(5){
-    background:red;
+    /* background:red; */
     display:none;
 }
 
@@ -309,10 +309,11 @@ video{
     }
 
     .social > div:nth-child(5){
-        background:red;
         display:block;
     }
-    
+    .social{
+        width:200px;
+    }
 }
 
 @media screen and (max-width: 767px){
