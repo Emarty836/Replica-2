@@ -118,3 +118,98 @@ nav > a:nth-child(1){
     flex-direction:row;
     left:90%;
 }
+
+/*-----------------------------------------------------------------Footer-----------------------------------------------------*/
+footer{
+    background:white;
+    width:100%;
+    height:360px;
+}
+
+#upper{
+    position:relative;
+    /* background:red;
+    border:1px green solid; */
+    width:70%;
+    height:130px;
+    top:50px;
+    left:165px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;   
+}
+
+#upper > div{
+    /* background:green; */
+    width:100%;
+    height:100%;
+    border:white solid 1px;
+}
+
+.upperText{
+    text-align: left;
+    font-size:16px;
+    line-height: 1.6;
+}
+
+#contact{
+    text-transform: uppercase;
+}
+
+.footerLight{
+    color:rgb(173, 173, 173);
+}
+
+#lower{
+    height:120px;
+    position:relative;
+    top:100px;
+    width:70%;
+    display:flex;
+    left:165px;
+    align-items: center;
+    border-top:solid 1px grey;
+    justify-content: space-between;
+}
+
+#lower > p{
+    font-size:13px;
+    color:rgb(173, 173, 173);
+}
+
+.inlineFooter{
+    border:none;
+    width:310px;
+    height:40px;
+    padding:0;
+    font-size:0;
+}
+
+input[type='text']{
+    /* background:green; */
+    height:36px;
+    width:225px;
+    border: solid 1px black;
+    vertical-align: top;
+    border-right:none;
+}
+
+.inlineFooter > button{
+    height:40px;
+    border-radius:0;
+    background:white;
+    cursor:pointer;
+    box-shadow: none;
+    border:none;
+    border:1px solid black;
+    width:75px;
+    text-transform: uppercase;
+    font-weight:bold;
+    vertical-align: top; 
+    transition-duration: .4s;
+}
+
+.inlineFooter > button:hover{
+    color:white;
+    background:black;
+}
