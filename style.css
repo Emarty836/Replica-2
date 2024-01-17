@@ -520,7 +520,7 @@ input[type='text']{
 @media screen and (max-width:300px) {
     .mainHeadline{
         left:10%;
-        /* need to figure out how to make the text group be in center as page widt hshinks past it. */
+        /* need to figure out how to make the text group be in center as page width links past it. */
     }
     
 }
