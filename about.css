@@ -19,7 +19,7 @@ h1{
 .branding{
     width:200px;
     height:1250px;
-    position:absolute;
+    position:fixed;
     left:60px;
     top:30px;
 }
