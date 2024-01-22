@@ -1,6 +1,7 @@
 html{
     padding:0;
     margin:0;
+    font-family:'aktiv-grotesk', 'helvetica','Arial Narrow', 'sans-serif';
 }
 
 body{
@@ -156,10 +157,56 @@ nav > a:nth-child(1){
     display:none;
 }
 
+/*---------------------------------------- Main ----------------------------------------------------*/
+main{
+    height:1200px;
+    position:relative;
+    top:160px;
+}
+
+section{
+    position:relative;
+    height:1000px;
+    /* border:red solid 1px; */
+    /* width:78%;
+    left:150px; */
+    /* margin:0 auto; */
+    width:calc(100% - 320px);
+    margin: 0 auto;
+}
+
+#soloTextSection{
+    /* background:green; */
+    width:66%;
+    /* border:yellow solid 1px; */
+    height:300px;
+}
+#soloText{
+    /* background:blue; */
+    color:white;
+    font-size:19px;
+    line-height:1.8;
+    text-align: left;
+    margin-top:0;  /*to be adjusted*/
+}
+
+.aboutFlex{
+    /* border: red solid 1px; */
+    display:flex;
+    flex-direction: column;
+    margin-top:2px;
+}
+
+.aboutFlex > div{
+    border-top:white 1px solid;
+    width:100%;
+    height:121.5px;
+}
 
 /*-----------------------------------------------------------------Footer-----------------------------------------------------*/
 footer{
     background:white;
+    margin-top:40px;
     width:100%;
     height:360px;
 }
