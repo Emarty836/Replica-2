@@ -3,6 +3,9 @@ html{
     margin:0;
     font-family:'aktiv-grotesk', 'helvetica','Arial Narrow', 'sans-serif';
 }
+/* *{
+    margin:0;
+} */
 
 body{
     text-align:center;
@@ -18,7 +21,7 @@ h1{
 /* ------------------------------------   Logo ----------------------------------------------------------- */
 .branding{
     width:200px;
-    height:1250px;
+    height:60px;
     position:fixed;
     left:60px;
     top:30px;
@@ -161,12 +164,90 @@ nav > a:nth-child(1){
 main{
     width:100%;
     background:#ebebeb;
-    height:2000px;
+    height:2280px;
+    /* at bordeline between with/without side navs; To decrease at higher pixel widths; can increase by 100px? (1880px - 2280px) */
 }
 
+section{
+    position:relative;
+    height:122vw;
+    /* border:red solid 1px; */
+    width:calc(100% - 320px);
+    margin: 0 auto;
+    top:150px;
+}
 
+#pOne{
+    width:65%;
+    /* border:red solid 1px; */
+    line-height:2;
+    text-align:left;
+    margin:0;
+}
+.twoButtons{
+    /* border:red solid 1px; */
+    /* height:80px; */
+    margin:50px;
+    margin-left:0;
+    display:flex;
+}
+.twoButtons > div{
+    margin: 20px 0;
+}
+.twoButtons > div > span{
+    padding:15px;
+    border:black solid 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.picGrid{
+    /* border:blue solid 1px; */
+    height:80vw;
+    display:grid;
+    column-gap: .65%;
+    grid-template-columns: 50% 50%;
+    row-gap: .1%;
+    grid-template-rows: 45% 55%;
+}
+.picGrid > div{
+    background-repeat: no-repeat;
+}
 
+.picGrid > div:nth-of-type(1){
+    background-image:url('images/Photographer.jpg');
+    width:calc(100% - 1.36667em);
+    margin-right: 1em;
+    background-position: 50% 50%;
+    background-size: 90% 90%;
+    transform: scaleY(1);
+    transform: scaleX(1.1);
+}
+.picGrid > div:nth-of-type(2){
+    background-image:url('images/photoG2.jpg');
+    width:calc(100% - 1.36667em);
+    margin-right: 1em;
+    background-position: 50% 50%;
+    background-size: 110% 90%;
+    transform: scaleY(1);
+    transform: scaleX(1);
+}
+.picGrid > div:nth-of-type(3){
+    background-image:url('images/photoG3.jpg');
+    width:200%;
+    background-size:100%;
+}
+.finalText{
+    /* border:red solid 1px; */
+    margin: 5vw 0;
+    display:block;
+}
 
+.finalText > p{
+    position:relative;
+    font-size:15px;
+    text-align: left;
+    line-height: 2;
+}
 /*--------------------------------------------- Education page ----------------------------------------------------*/
 
 
@@ -176,6 +257,8 @@ footer{
     background:white;
     width:100%;
     height:360px;
+    position:relative;
+    z-index:-1;
 }
 
 #upper{
