@@ -367,6 +367,14 @@ input[type='text']{
     .social{
         width:200px;
     }
+    section{
+        position:relative;
+        height:80vw;
+        /* border:blue solid 1px; */
+        width:calc(100% - 60px);
+        margin: 0 auto;
+        top:150px;
+    }
 }
 
 @media screen and (max-width: 767px){
