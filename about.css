@@ -9,6 +9,7 @@ body{
     margin:0;
     padding:0;
     background-color: black;
+    
 }
 
 h1{
@@ -198,12 +199,28 @@ section{
     display:flex;
     flex-direction: column;
     margin-top:2px;
+    width:100%;
+    color:white;
 }
 
-.aboutFlex > div{
+
+.textBlock{
+    display:flex;
+    justify-content: space-between;
     border-top:white 1px solid;
-    width:100%;
     height:121.5px;
+}
+
+.textBlock > div > h2{
+    font-size:30px;
+    margin-top:15px;
+}
+.rightSide{
+    text-align: right;
+}
+.rightSide > p{
+    font-size:12px;
+    text-transform: uppercase;
 }
 
 /*-----------------------------------------------------------------Footer-----------------------------------------------------*/
