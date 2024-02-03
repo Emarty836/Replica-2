@@ -15,7 +15,7 @@ body{
     overflow:hidden;
 }
 
-h1{
+h1, h2{
     margin:0;
 }
 
@@ -72,6 +72,7 @@ nav{
     width:45px;
     height:100%;
     z-index:2;
+    transition: transform 0.3s ease-in-out;
 }
 nav > a:nth-child(1){
     background:black;
@@ -98,6 +99,7 @@ nav > a:nth-child(1){
 .nav-left{ 
     /* background:green; */
     flex-direction:column-reverse;
+    
 }
 
 .nav-left > a > .side-text{
@@ -178,12 +180,48 @@ nav > a:nth-child(1){
 
 
 /*--------------------------------------------- Main ---------------------------------------------------------------*/
+.sectionText > h2{
+    font-size:40px;
+}
 
 section{
     width:100%;
     position:relative;
 }
+.sectionText{
+    color:white;
+    margin:0 15%;
+    position:relative;
+    transform:translateY(0);
+    top:100%;
+    /* border:white solid 1px; */
+    width:48%;
+    text-align:left;
+    overflow:visible;
+}
+.sectionText > p{
+    line-height:1.8;
+}
 
+#temp{
+    top:20%;
+}
+
+/* #two > div{
+    margin:0 17%;
+    position:relative;
+    transform:translateY(0);
+    top:100%;
+    border:white solid 1px;
+    width:85%;
+    text-align:left;
+    overflow:visible;
+} */
+
+#test{
+    border:red solid 1px;
+    margin:0;
+}
 
 #one{
     background:green;
@@ -278,9 +316,13 @@ video{
     z-index:0;
     box-sizing:border-box;
     display:block;
+    margin:0;
 }
 
 /*-------------------------------------------------------- Section 2 -------------------------------------------------------*/
+/* section > div{
+    color:white;
+} */
 
 #two{
     height:100vh;
@@ -295,16 +337,7 @@ video{
     background-repeat: no-repeat;
 }
 
-#two > div{
-    margin:0 17%;
-    position:relative;
-    transform:translateY(0);
-    top:100%;
-    border:white solid 1px;
-    width:85%;
-    text-align:left;
-    overflow:visible;
-}
+
 
 .frontShade:nth-of-type(1){
     top:100%;
