@@ -590,22 +590,11 @@ input[type='text']{
 
 /* ---------------- Still need to figure out mobile sizing for section two ------------------- */
 @media screen and (max-width:1199px){
-    .mainHeadline{
-        font-size:85px;
-        /* border:green dashed 2px; */
-        top:300px;
-    }
+    
 }
 
 @media screen and (max-width: 959px) {
-    .mainHeadline{
-        font-size:70px;
-        /* border:blue solid 1px; */
-        top:270px;
-    }
-    .subHeading{
-        font-size:60px;
-    }
+    
     nav{
         display:none;
     }
@@ -619,36 +608,15 @@ input[type='text']{
 }
 
 @media screen and (max-width: 767px){
-    .mainHeadline{
-        font-size:50px;
-        left:12%;
-        line-height:50px;
-        width:72%;
-    }
-    .subHeading{
-        font-size:50px;
-    }
+    
 }
 
 @media screen and (max-width: 599px){
-    .mainHeadline{
-        font-size:35px;
-        left:12%;
-        line-height:35px;
-        width:71%;
-        top:330px;
-    }
-    .subHeading{
-        font-size:50px;
-        font-size:35px;
-    }
+    
 }
 
 @media screen and (max-width:300px) {
-    .mainHeadline{
-        left:10%;
-        /* need to figure out how to make the text group be in center as page width links past it. */
-    }
+    
     
 }
 /* @media screen and (max-width: 450px) {
