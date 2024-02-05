@@ -30,6 +30,8 @@ svg{
     transition:1s;
     fill: rgba(34,34,34,1);
     filter:invert(95%);
+    transform:translateY(0px);
+    transition-duration: 1s;
     /* mix-blend-mode: difference; */
 }
 
@@ -143,7 +145,6 @@ nav > a:nth-child(1){
     width:25px;
     height:25px;
     /* background:green; */
-    transform:translateX(-50%);
 }
 
 
