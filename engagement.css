@@ -19,6 +19,7 @@ body{
     position:fixed;
     left:60px;
     top:30px;
+    z-index:1;
 }
 
 svg{
@@ -255,10 +256,10 @@ footer{
     position:relative;
     /* background:red;
     border:1px green solid; */
-    width:70%;
+    width:calc(100% - 320px);
     height:130px;
     top:50px;
-    left:165px;
+    margin: 0 auto;
     display:flex;
     flex-direction:row;
     justify-content: space-between;   
@@ -289,9 +290,9 @@ footer{
     height:120px;
     position:relative;
     top:100px;
-    width:70%;
+    width:calc(100% - 320px);
     display:flex;
-    left:165px;
+    margin: 0 auto;
     align-items: center;
     border-top:solid 1px grey;
     justify-content: space-between;
@@ -346,38 +347,96 @@ input[type='text']{
 }
 
 @media screen and (max-width: 959px) {
-    
     nav{
         display:none;
     }
-
     .social > div:nth-child(5){
         display:block;
     }
     .social{
         width:200px;
     }
+    main{
+        width:100%;
+        height:1300px;
+        /* at bordeline between with/without side navs; To decrease at higher pixel widths; can increase by 100px? (1880px - 2280px) */
+    }
     section{
         position:relative;
-        height:80vw;
-        /* border:blue solid 1px; */
-        width:calc(100% - 60px);
+        /* border:red solid 1px; */
+        width:calc(100% - 65px);
         margin: 0 auto;
-        top:150px;
+        top:100px;
+    }
+    #lower, #upper{
+        width:calc(100% - 75px);
     }
 }
 
+@media screen and (max-width: 910px){
+    main{
+        height:1250px;
+    }
+    }
+
 @media screen and (max-width: 767px){
-    
+    main{
+        height:1200px;
+    }
+    .branding{
+        top:5px;
+        left:-15px;
+        transform: scale(.7);
+    }
+    .social{
+        right:20px;
+        top:20px;
+        width:180px;
+    }
+    #pOne{
+        font-size: 17px;
+        width:100%;
+    }
+    .finalText > p{
+        font-size:14px;
+    }
+    footer{
+        height:400px;
+    }
+    #upper{
+        flex-direction:column;
+        /* background:blue; */
+        height:auto;
+    }
+    #upper > div{
+        height:auto;
+        padding:0;
+        margin:0;
+    }
+    .upperText{
+        font-size:14px;
+        margin:0;
+    }
+    #lower{
+        flex-direction:column;
+        height:100px;
+    }
+    #lower > p{
+        font-size:11px;
+    }
 }
 
 @media screen and (max-width: 599px){
-    
+    main{
+        height:1250px;
+        /* at bordeline between with/without side navs; To decrease at higher pixel widths; can increase by 100px? (1880px - 2280px) */
+    }
 }
 
-@media screen and (max-width:300px) {
-    
-    
+@media screen and (max-width:340px) {
+    main{
+        height:1350px;
+    }
 }
 /* @media screen and (max-width: 450px) {
     #two{

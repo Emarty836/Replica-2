@@ -358,11 +358,9 @@ input[type='text']{
 }
 
 @media screen and (max-width: 959px) {
-    
     nav{
         display:none;
     }
-
     .social > div:nth-child(5){
         display:block;
     }
@@ -377,7 +375,6 @@ input[type='text']{
     }
     section{
         position:relative;
-        
         /* border:red solid 1px; */
         width:calc(100% - 65px);
         margin: 0 auto;

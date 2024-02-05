@@ -503,10 +503,10 @@ footer{
     position:relative;
     /* background:red;
     border:1px green solid; */
-    width:70%;
+    width:calc(100% - 320px);
     height:130px;
     top:50px;
-    left:165px;
+    margin: 0 auto;
     display:flex;
     flex-direction:row;
     justify-content: space-between;   
@@ -537,9 +537,9 @@ footer{
     height:120px;
     position:relative;
     top:100px;
-    width:70%;
+    width:calc(100% - 320px);
     display:flex;
-    left:165px;
+    margin: 0 auto;
     align-items: center;
     border-top:solid 1px grey;
     justify-content: space-between;
@@ -594,7 +594,6 @@ input[type='text']{
 }
 
 @media screen and (max-width: 959px) {
-    
     nav{
         display:none;
     }
@@ -605,19 +604,98 @@ input[type='text']{
     .social{
         width:200px;
     }
+    main{
+        width:100%;
+        height:4700px;
+        /* at bordeline between with/without side navs; To decrease at higher pixel widths; can increase by 100px? (1880px - 2280px) */
+    }
+    .storyGrid{
+        box-sizing:border-box;
+        position:relative;
+        display:grid;
+        top:170px;
+        width:calc(100% - 70px);
+        margin: 0 auto;
+        height:4400px;
+        /* border:solid 1px black; */
+        padding:0;
+        gap:10px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(17, 250px);
+    }
+    /* section{
+        position:relative;
+        border:red solid 1px;
+        width:calc(100% - 65px);
+        margin: 0 auto;
+        top:100px;
+    } */
+    #lower, #upper{
+        width:calc(100% - 75px);
+    }
 }
+
+@media screen and (max-width: 910px){
+    main{
+        height:4700px;
+    }
+    }
 
 @media screen and (max-width: 767px){
-    
+    main{
+        height:4700px;
+    }
+    .branding{
+        top:5px;
+        left:-15px;
+        transform: scale(.7);
+    }
+    .social{
+        right:20px;
+        top:20px;
+        width:180px;
+    }
+    /* #pOne{
+        font-size: 17px;
+        width:100%;
+    } */
+    .finalText > p{
+        font-size:14px;
+    }
+    footer{
+        height:400px;
+    }
+    #upper{
+        flex-direction:column;
+        /* background:blue; */
+        height:auto;
+    }
+    #upper > div{
+        height:auto;
+        padding:0;
+        margin:0;
+    }
+    .upperText{
+        font-size:14px;
+        margin:0;
+    }
+    #lower{
+        flex-direction:column;
+        height:100px;
+    }
+    #lower > p{
+        font-size:11px;
+    }
 }
 
-@media screen and (max-width: 599px){
+/* @media screen and (max-width: 599px){
     
-}
+} */
 
 @media screen and (max-width:300px) {
-    
-    
+    /* main{
+        height:2100px;
+    } */
 }
 /* @media screen and (max-width: 450px) {
     #two{
