@@ -523,7 +523,7 @@ footer{
 .upperText{
     text-align: left;
     font-size:16px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 #contact{
@@ -611,18 +611,8 @@ input[type='text']{
         /* at bordeline between with/without side navs; To decrease at higher pixel widths; can increase by 100px? (1880px - 2280px) */
     }
     .storyGrid{
-        box-sizing:border-box;
-        position:relative;
-        display:grid;
-        top:170px;
-        width:calc(100% - 70px);
-        margin: 0 auto;
-        height:4400px;
+        top:100px;
         /* border:solid 1px black; */
-        padding:0;
-        gap:10px;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(17, 250px);
     }
     /* section{
         position:relative;
@@ -644,7 +634,7 @@ input[type='text']{
 
 @media screen and (max-width: 767px){
     main{
-        height:4700px;
+        height:5300px;
     }
     .branding{
         top:5px;
@@ -656,12 +646,12 @@ input[type='text']{
         top:20px;
         width:180px;
     }
-    /* #pOne{
-        font-size: 17px;
-        width:100%;
-    } */
-    .finalText > p{
-        font-size:14px;
+    .storyGrid{
+        width:calc(100% - 70px);
+        height:5000px;
+        /* border:solid 1px black; */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
     }
     footer{
         height:400px;
@@ -687,6 +677,192 @@ input[type='text']{
     #lower > p{
         font-size:11px;
     }
+    
+#item1{
+    grid-column:1 / 2;
+    grid-row: 1;
+}
+#item2{
+    grid-column:2 / 3;
+    grid-row: 1;
+}
+#item3{
+    grid-column:1/2;
+    grid-row: 2;
+}
+#item4{
+    grid-column:2 / 3;
+    grid-row: 2;
+}
+#item5{
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+#item6{
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+#item7{
+    grid-column: 1 / 2;
+    grid-row: 4;
+}
+#item8{
+    grid-column: 2 / 3;
+    grid-row: 4;
+}
+#item9{
+    grid-column: 1 / 2;
+    grid-row: 5;
+}
+#item10{
+    grid-column: 2/3;
+    grid-row: 5;
+}
+#item11{
+    grid-column: 1 / 2;
+    grid-row: 6;
+}
+#item12{
+    grid-column: 2 / 3;
+    grid-row: 6;
+}
+#item13{
+    grid-column: 1 / 2;
+    grid-row: 7;
+}
+#item14{
+    grid-column: 2 / 3;
+    grid-row: 7;
+}
+#item15{
+    grid-column: 1/2;
+    grid-row: 8;
+}
+#item16{
+    grid-column: 2/3;
+    grid-row: 8;
+}
+#item17{
+    grid-column: 1 / 2;
+    grid-row: 9;
+}
+#item18{
+    grid-column: 2 / 3;
+    grid-row: 9;
+}
+#item19{
+    grid-column: 1 / 2;
+    grid-row: 10;
+}
+#item20{
+    grid-column: 2 / 3;
+    grid-row: 10;
+}
+#item21{
+    grid-column: 1 / 2;
+    grid-row: 11;
+}
+#item22{
+    grid-column: 2 / 3;
+    grid-row: 11;
+}
+#item23{
+    grid-column: 1/2;
+    grid-row: 12;
+}
+#item24{
+    grid-column: 2/3;
+    grid-row: 12;
+}
+#item25{
+    grid-column: 1 / 2;
+    grid-row: 13;
+}
+#item26{
+    grid-column: 2 / 3;
+    grid-row: 13;
+}
+#item27{
+    grid-column: 1 / 2;
+    grid-row: 14;
+}
+#item28{
+    grid-column: 2 / 3;
+    grid-row: 14;
+}
+#item29{
+    grid-column: 1 / 2;
+    grid-row: 15;
+}
+#item30{
+    grid-column: 2 / 3;
+    grid-row: 15;
+}
+#item31{
+    grid-column: 1 / 2;
+    grid-row: 16;
+}
+#item32{
+    grid-column: 2 / 3;
+    grid-row: 16;
+}
+#item33{
+    grid-column: 1 / 2;
+    grid-row: 17;
+}
+#item34{
+    grid-column: 2 / 3;
+    grid-row: 17;
+}
+#item35{
+    grid-column: 1 / 2;
+    grid-row: 18;
+}
+#item36{
+    grid-column: 2 / 3;
+    grid-row: 18;
+}
+#item37{
+    grid-column: 1 / 2;
+    grid-row: 19;
+}
+#item38{
+    grid-column: 2 / 3;
+    grid-row: 19;
+}
+#item39{
+    grid-column: 1 / 2;
+    grid-row: 20;
+}
+#item40{
+    grid-column: 2 / 3;
+    grid-row: 20;
+}
+#item41{
+    grid-column: 1 / 2;
+    grid-row: 21;
+}
+#item42{
+    grid-column: 2 / 3;
+    grid-row: 21;
+}
+#item43{
+    grid-column: 1 / 2;
+    grid-row: 22;
+}
+#item44{
+    grid-column: 2 / 3;
+    grid-row: 22;
+}
+#item45{
+    grid-column: 1 / 2;
+    grid-row: 23;
+}
+
+#item46{
+    grid-column: 2 / 3;
+    grid-row: 23;
+}
 }
 
 /* @media screen and (max-width: 599px){
