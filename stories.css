@@ -223,6 +223,9 @@ main{
     color:black;
 }
 
+.storyText > h3 {
+    font-size:17px;
+}
 
 .storyText > p{
 border:red solid 1px;
@@ -230,6 +233,7 @@ padding:0;
 margin:0;
 position:relative;
 top:0px;
+font-size:13px;
 }
 
 .storyGrid > div:nth-child(odd):hover .storyText{
@@ -652,6 +656,14 @@ input[type='text']{
         /* border:solid 1px black; */
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
+    }
+    .storyText > h3 {
+        font-size:16px;
+        margin-bottom:5px;
+    }
+    
+    .storyText > p{
+    font-size:12px;
     }
     footer{
         height:400px;
