@@ -204,7 +204,7 @@ main{
     box-sizing:border-box;
     display:none;
     padding:0;
-    /* border: blue solid 1px; */
+    border: blue solid 1px;
     width:90%;
     height:50%;
     text-align:left;
@@ -225,7 +225,7 @@ main{
 
 
 .storyText > p{
-/* border:red solid 1px; */
+border:red solid 1px;
 padding:0;
 margin:0;
 position:relative;
