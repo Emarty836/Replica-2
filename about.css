@@ -218,7 +218,6 @@ section{
     height:121.5px;
     transition: color .3s ease;
     position:relative;
-    z-index:2;
 }
 
 .other{
@@ -302,6 +301,15 @@ section{
     text-transform: uppercase;
     position:relative;
     top:10px;
+}
+
+#video{
+    height:70%;
+    width:40%;
+    margin:0 auto;
+    background-position: 50% 50%;
+    background-image: url('https://i.vimeocdn.com/video/629989426-6d6cbd8558897fc24e686d9dec2b7b30f5d91d98e30f65253433d9aa0a614a9d-d?mw=700&mh=394');
+    /* border:solid white 1px; */
 }
 
 
@@ -493,6 +501,16 @@ input[type='text']{
         top:20px;
         width:180px;
     }
+    #soloTextSection{
+        width:100%;
+        height:300px;
+    }
+    #soloText{
+        font-size:17px;
+    }
+    .hiddenFlex > div > p{
+        font-size:15px;
+    }
     footer{
         height:400px;
     }
@@ -524,12 +542,22 @@ input[type='text']{
         height:calc(1900px + 3vw);
         /* at bordeline between with/without side navs; To decrease at higher pixel widths; can increase by 100px? (1880px - 2280px) */
     }
+    .hiddenFlex > div > p{
+        font-size:13px;
+    }
+    #soloTextSection{
+        width:100%;
+        height:400px;
+    }
 }
 
 @media screen and (max-width:340px) {
     main{
         height:2100px;
     } 
+    #soloTextSection{
+        height:500px;
+    }
 }
 /* @media screen and (max-width: 450px) {
     #two{
