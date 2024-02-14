@@ -216,7 +216,7 @@ section{
 }
 
 .picGrid > div:nth-of-type(1){
-    background-image:url('images/Photographer.jpg');
+    background-image:url('images/photographer.jpg');
     width:calc(100% - 1.36667em);
     margin-right: 1em;
     background-position: 50% 50%;
